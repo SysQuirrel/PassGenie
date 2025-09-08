@@ -1,4 +1,5 @@
-"here we will build the password generator whcih will take the arguements like the length of the password , number of special characters, uppercase letters, lowercase letters and the digits"
+'''here we will build the password generator which will take the arguments like the length of the password,
+number of special characters, uppercase letters, lowercase letters and the digits'''
 
 import string
 import random
