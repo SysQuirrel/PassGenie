@@ -4,6 +4,7 @@ number of special characters, uppercase letters, lowercase letters and the digit
 import string
 import random
 import secrets
+import os
 
 
 def generate_password(l,u,p,d, total):
@@ -24,9 +25,14 @@ def generate_password(l,u,p,d, total):
     return password
 
 def random_passphrase_generator(word_count):
-    with open('word_list.txt') as f:
+    # Get the directory where this Python file is located
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    word_list_path = os.path.join(current_dir, 'word_list.txt')
+    
+    with open(word_list_path) as f:
         #words list is taken from here https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases
         words = [word.strip() for word in f]
         passphrase = ' '.join(secrets.choice(words) for i in range(word_count))
+        f.close()
     return passphrase
 
