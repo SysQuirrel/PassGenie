@@ -1,6 +1,14 @@
 #%%
+import sys
+import os
 import streamlit as st
-from password_generator import generate_password, random_passphrase_generator
+
+# Add the parent directory to Python path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Import functions directly from your password_generator module
+from code.password_generator import generate_password, random_passphrase_generator 
+
 
 st.title(":green[Your secret is safe with us]")
 st.header(":violet[Random password generator]", divider = "violet")
