@@ -1,5 +1,8 @@
 #%%
+import sys
+import os
 import streamlit as st
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from code.password_generator import generate_password, random_passphrase_generator
 
 st.title(":green[Your secret is safe with us]")

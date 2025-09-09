@@ -1,6 +1,6 @@
 from .password_generator import generate_password, random_passphrase_generator
 
 __all__ = [
-    'generate_passowrd', 
+    'generate_password', 
     'random_passphrase_generator'
 ]
