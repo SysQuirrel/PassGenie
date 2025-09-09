@@ -1,6 +1,6 @@
 #%%
 import streamlit as st
-from password_generator import generate_password, random_passphrase_generator
+from code.password_generator import generate_password, random_passphrase_generator
 
 st.title(":green[Your secret is safe with us]")
 st.header(":violet[Random password generator]", divider = "violet")
