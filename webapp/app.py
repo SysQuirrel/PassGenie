@@ -3,9 +3,9 @@ import sys
 import os
 import streamlit as st
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+#sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from code.password_generator import generate_password, random_passphrase_generator 
+from src.generator import generate_password, random_passphrase_generator 
 
 @st.cache_data
 def cached_generate_password(l, u, p, d, total):
