@@ -1,1 +1,1 @@
-# PasswordGenie
+# PassGenie
