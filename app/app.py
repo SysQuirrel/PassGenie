@@ -2,8 +2,9 @@
 import sys
 import os
 import streamlit as st
+import config as cfg
 
-#sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.generator import generate_password, random_passphrase_generator 
 
